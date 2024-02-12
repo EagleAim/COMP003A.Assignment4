@@ -29,6 +29,18 @@ namespace COMP003A.Assignment4
                 output += "#";
             }
 
+            Console.WriteLine("******************************************");
+            Console.WriteLine("ForEach section");
+            Console.WriteLine("Output all of the freinds in a array");
+            Console.WriteLine("******************************************");
+
+            string[] friends = new string[] { "Rachel", "Joey", "Chandler", "Ross", "Monica", "Phoebe" };
+
+            foreach(var friend in friends)
+            {
+                Console.WriteLine(friend);
+            }
+
         }
     }
 }
