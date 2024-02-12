@@ -5,6 +5,8 @@
  */
 
 
+using System.Reflection.Metadata;
+
 namespace COMP003A.Assignment4
 {
     internal class Program
@@ -18,11 +20,12 @@ namespace COMP003A.Assignment4
 
             
             Console.WriteLine("\n Please enter a positive whole number");
-            int limit = 999999999;
+            int limit = Convert.ToInt32(Console.ReadLine());
             string output = "#";
 
             for (int i = 0; i < limit; i++) 
             {
+                Console.WriteLine(output);   
                 output += "#";
             }
 
