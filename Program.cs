@@ -5,7 +5,9 @@
  */
 
 
+using System.Diagnostics.Metrics;
 using System.Reflection.Metadata;
+using System.Transactions;
 
 namespace COMP003A.Assignment4
 {
@@ -40,6 +42,19 @@ namespace COMP003A.Assignment4
             {
                 Console.WriteLine(friend);
             }
+
+            Console.WriteLine("******************************************");
+            Console.WriteLine("Do-While section");
+            Console.WriteLine("Output 0-50 by 5s");
+            Console.WriteLine("******************************************");
+
+            int counter = 0;
+            do
+            {
+                Console.WriteLine(counter);
+                counter += 5;
+            }  while (counter <= 50);
+
 
         }
     }
