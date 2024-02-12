@@ -55,7 +55,23 @@ namespace COMP003A.Assignment4
                 counter += 5;
             }  while (counter <= 50);
 
+            Console.WriteLine("******************************************");
+            Console.WriteLine("while section");
+            Console.WriteLine("output 1-20");
+            Console.WriteLine("If the Number is divisable by 2, output Foo");
+            Console.WriteLine("If the Number is divisable by 5, output Bar");
+            Console.WriteLine("If the Number is divisable by 2 & 5, output FooBar");
+            Console.WriteLine("******************************************");
 
+            int counter2 = 1;
+            while (counter2 <= 20) 
+            {
+                if (counter2 % 2 == 0) output += "Foo";
+                if (counter2 % 5 == 0) output += "Bar";
+                if (counter2 % 2 == 0 && counter2 % 5 == 0) output += "FooBar";
+                
+                
+            } 
         }
     }
 }
