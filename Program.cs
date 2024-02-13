@@ -66,12 +66,23 @@ namespace COMP003A.Assignment4
             int counter2 = 1;
             while (counter2 <= 20) 
             {
-                if (counter2 % 2 == 0) output += "Foo";
-                if (counter2 % 5 == 0) output += "Bar";
-                if (counter2 % 2 == 0 && counter2 % 5 == 0) output += "FooBar";
-                
-                
-            } 
+                if (counter2 % 2 == 0)
+                {
+                    Console.WriteLine("Foo");
+                }
+                if (counter2 % 5 == 0)
+                {
+                    Console.WriteLine("Bar");
+                }
+                if (counter2 % 2 == 0 && counter2 % 5 == 0)
+                {
+                    Console.WriteLine("FooBar");
+                }
+                else
+                {
+                    Console.WriteLine(counter2);
+                }
+            }
         }
     }
 }
