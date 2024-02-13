@@ -81,7 +81,7 @@ namespace COMP003A.Assignment4
                 else
                 {
                     Console.WriteLine(counter2);
-                }
+                }counter2++;
             }
         }
     }
